@@ -4,5 +4,8 @@
 	xmlns:context="http://www.springframework.org/schema/context"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
-
+	<bean id="cuenta" class="com.ec.inyeccion.dependencias.framework.Cuenta">
+		<property name="numero" value="12345"></property>
+		<property name="saldo" value="100"></property>
+	</bean>
 </beans>

@@ -4,7 +4,15 @@ public class Cuenta {
 	private String numero;
 	private int saldo;
 	
-	//metodos set y get
+	public Cuenta() {}
+	
+	public Cuenta(String numero, int saldo) {
+		super();
+		this.numero = numero;
+		this.saldo = saldo;
+	}
+	
+	//Get y Set
 	
 	public String getNumero() {
 		return numero;
