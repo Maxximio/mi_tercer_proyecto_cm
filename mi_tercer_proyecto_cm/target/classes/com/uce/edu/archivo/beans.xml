@@ -3,9 +3,34 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:context="http://www.springframework.org/schema/context"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
-	<bean id="cuenta" class="com.ec.inyeccion.dependencias.framework.Cuenta">
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+	<bean id="cuenta"
+		class="com.ec.inyeccion.dependencias.framework.Cuenta">
 		<property name="numero" value="12345"></property>
 		<property name="saldo" value="100"></property>
 	</bean>
+	<bean id="cuenta1"
+		class="com.ec.inyeccion.dependencias.framework.Cuenta">
+		<property name="numero" value="23"></property>
+		<property name="saldo" value="0"></property>
+	</bean >
+	<bean id="estu"
+	 class="com.ec.inyeccion.dependencias.framework.Estudiante">
+	 <constructor-arg value="Edison"></constructor-arg>
+	 <constructor-arg value="Cayambe"></constructor-arg>
+	 <constructor-arg value="32"></constructor-arg>
+	</bean>
+	
+	<bean id="paciente" class="luis.ortiz.Paciente"> 
+	<property name="nombre" value="luis"></property>
+	<property name="apellido" value="ortiz"></property>
+	<property name="edad" value="18"></property>
+	</bean>
+	<bean id="profesor" class="luis.ortiz.Profesor">
+	<constructor-arg value="Edison"></constructor-arg>
+	<constructor-arg value="Ortiz"></constructor-arg>
+	<constructor-arg value="Arquitecto"></constructor-arg>
+	<constructor-arg value="Uce"></constructor-arg>
+	</bean>
+	
 </beans>
